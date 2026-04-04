@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
+import LeadPopup from '@/components/LeadPopup';
 import Footer from '@/components/Footer';
 import { businessInfo, generateLocalBusinessSchema, generateOrganizationSchema, generateWebSiteSchema } from '@/lib/seo';
 
@@ -141,6 +142,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
         <Footer />
+          <LeadPopup />
         
         {/* Skip to main content link for accessibility */}
         <a 
